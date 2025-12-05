@@ -29,7 +29,7 @@ public class RegisterExpenseUseCase
         var result = DateTime.Compare(request.Date, DateTime.UtcNow);
         if (result > 0)
         {
-            throw new ArgumentException("Expenses cannot be for the future teste");
+            throw new ArgumentException("Expenses cannot be for the future");
         }
 
         var paymentTypeIsValid = Enum.IsDefined(typeof(PaymentType), request.PaymentType);
