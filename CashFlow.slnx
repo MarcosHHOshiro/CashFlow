@@ -1,7 +1,7 @@
 <Solution>
   <Folder Name="/src/">
-    <Project Path="CashFlow.Application/CashFlow.Application.csproj" />
     <Project Path="src/CashFlow.api/CashFlow.api.csproj" />
+    <Project Path="src/CashFlow.Application/CashFlow.Application.csproj" Id="264f52fa-8688-4b7c-94ca-a7399b4aceb6" />
     <Project Path="src/CashFlow.Communication/CashFlow.Communication.csproj" />
     <Project Path="src/CashFlow.Domain/CashFlow.Domain.csproj" />
     <Project Path="src/CashFlow.Excetiom/CashFlow.Excetiom.csproj" />
