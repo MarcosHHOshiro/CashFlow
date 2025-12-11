@@ -81,9 +81,9 @@ namespace CashFlow.Excetiom {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a The PaymentType is not valid.
         /// </summary>
-        public static string String4 {
+        public static string PAYMENT_TYPE_INVALID {
             get {
-                return ResourceManager.GetString("String4", resourceCulture);
+                return ResourceManager.GetString("PAYMENT_TYPE_INVALID", resourceCulture);
             }
         }
         
