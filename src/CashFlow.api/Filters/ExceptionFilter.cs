@@ -9,8 +9,8 @@ public class ExceptionFilter : IExceptionFilter
 {
     public void OnException(ExceptionContext context)
     {
-        
-        if(context.Exception is CashFlowException)
+
+        if (context.Exception is CashFlowException)
         {
             HandleProjectException(context);
         }
@@ -22,11 +22,18 @@ public class ExceptionFilter : IExceptionFilter
 
     private void HandleProjectException(ExceptionContext context)
     {
-        if(context.Exception is ErrorOnValidationException)
+        if (context.Exception is ErrorOnValidationException)
         {
             var ex = context.Exception as ErrorOnValidationException;
 
             var errorResponse = new ResponseErrorJson(ex.Errors);
+
+            context.HttpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
+            context.Result = new ObjectResult(errorResponse);
+        }
+        else
+        {
+            var errorResponse = new ResponseErrorJson(context.Exception.Message);
 
             context.HttpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
             context.Result = new ObjectResult(errorResponse);
