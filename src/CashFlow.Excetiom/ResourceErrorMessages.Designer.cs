@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CashFlow.Excetiom.ExceptionsBase {
+namespace CashFlow.Excetiom {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace CashFlow.Excetiom.ExceptionsBase {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CashFlow.Excetiom.ExceptionsBase.ResourceErrorMessages", typeof(ResourceErrorMessages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CashFlow.Excetiom.ResourceErrorMessages", typeof(ResourceErrorMessages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -81,9 +81,9 @@ namespace CashFlow.Excetiom.ExceptionsBase {
         /// <summary>
         ///   Consulta uma cadeia de caracteres localizada semelhante a The PaymentType is not valid.
         /// </summary>
-        public static string PAYMENT_TYPE_INVALID {
+        public static string String4 {
             get {
-                return ResourceManager.GetString("PAYMENT_TYPE_INVALID", resourceCulture);
+                return ResourceManager.GetString("String4", resourceCulture);
             }
         }
         
