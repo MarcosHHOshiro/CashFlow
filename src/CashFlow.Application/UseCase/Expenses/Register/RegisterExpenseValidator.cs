@@ -1,6 +1,5 @@
 ﻿using CashFlow.Communication.Requests;
 using CashFlow.Excetiom;
-using CashFlow.Excetiom.ExceptionsBase;
 using FluentValidation;
 
 namespace CashFlow.Application.UseCase.Expenses.Register;
